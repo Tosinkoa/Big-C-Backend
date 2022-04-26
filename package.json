@@ -6,10 +6,8 @@
   "author": "Ojo Paul",
   "license": "MIT",
   "scripts": {
-    "server": "nodemon server",
     "start": "node server",
-    "client": "npm run dev --prefix client",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "nodemon server"
   },
   "dependencies": {
     "apicache": "^1.6.3",

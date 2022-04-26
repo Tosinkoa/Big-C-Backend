@@ -41,7 +41,8 @@ router.post(
 
       res.cookie("token", token, {
         httpOnly: true,
-        sameSite: "strict",
+        secure: 'true',
+        sameSite: "none",
       }).send;
       res.status(200).json("Register Successful");
     } catch (err) {
